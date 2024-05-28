@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>$Lorem</title>
+</head>
+
+<body>
+    <section class="first-screen">
+        <div class="first-screen-container">
+            <header class="header">
+                <h1>$Lorem</h1>
+                <p>CA: Lorem, ipsum dolor.</p>
+            </header>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item first active">
+                      <img src="./images/Fashion-set.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/BreakingBad.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/Kid.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/King.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item last">
+                      <img src="./images/Skrudj.png" alt="Third slide">
+                    </div>
+                  </div>
+            </div>
+            <div class="socials">
+                <div class="links">
+                    <a href="" class="dex-screener"><img src="./icons/dex-screener-icon.svg" alt=""></a>
+                    <a href="" class="telegram"><img src="./icons/telegram-icon.svg" alt=""></a>
+                    <a href="" class="twitter"><img src="./icons/x-icon.svg" alt=""></a>
+                </div>
+                <div class="links-text">
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wardrobe">
+        <div class="wardrobe-container">
+            <div class="wardrobe-image">
+                <img id="avatar" src="./images/Raccon.png" alt="Avatar">
+                <img id="hat" class="overlay" src="" alt="Hat">
+                <img id="body" class="overlay" src="" alt="Body">
+                <img id="bottom" class="overlay" src="" alt="Bottom">
+                <img id="glasses" class="overlay" src="" alt="Glasses">
+                <img id="accessories" class="overlay" src="" alt="Accessories">
+                <img id="accessories-right" class="overlay" src="" alt="Accessories">
+                <img id="background" class="overlay" src="" alt="Background"> 
+            </div>
+            <div class="wardrobe-selectors">
+                <div class="hats">
+                    <div class="header">Hats</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('hat', '')">None</div>
+                        <div class="item" onclick="changeItem('hat', './images/Fashion_hood.png')"><img src="./images/Fashion_hood.png" alt="Hat 1"></div>
+                        <div class="item" onclick="changeItem('hat', './images/Gold_hat.png')"><img src="./images/Gold_hat.png" alt="Hat 2"></div>
+                        <div class="item" onclick="changeItem('hat', './images/Lab_hat.png')"><img src="./images/Lab_hat.png" alt="Hat 3"></div>
+                        <div class="item" onclick="changeItem('hat', './images/Play_hat.png')"><img src="./images/Play_hat.png" alt="Hat 4"></div>
+                        <div class="item" onclick="changeItem('hat', './images/Throne_crown.png')"><img src="./images/Throne_crown.png" alt="Hat 5"></div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="header">Body</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('body', '')">None</div>
+                        <div class="item" onclick="changeItem('body', './images/Fashion_Jacket.png')"><img src="./images/Fashion_Jacket.png" alt="Body 1"></div>
+                        <div class="item" onclick="changeItem('body', './images/Lab_uniform.png')"><img src="./images/Lab_uniform.png" alt="Body 2"></div>
+                        <div class="item" onclick="changeItem('body', './images/Play_tshirt.png')"><img src="./images/Play_tshirt.png" alt="Body 3"></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="header">Bottom</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('bottom', '')">None</div>
+                        <div class="item" onclick="changeItem('bottom', './images/Fashion_boots.png')"><img src="./images/Fashion_boots.png" alt="Bottom 1"></div>
+                    </div>
+                </div>
+                <div class="accessories">
+                    <div class="header">Accessories Left Hand</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('accessories', '')">None</div>
+                        <div class="item" onclick="changeItem('accessories', './images/Throne_orb.png')"><img src="./images/Throne_orb.png" alt="Accessory 1"></div>
+                        <div class="item" onclick="changeItem('accessories', './images/Lab_bottle.png')"><img src="./images/Lab_bottle.png" alt="Accessory 2"></div>
+                    </div>
+                </div>
+                <div class="accessories-right">
+                    <div class="header">Accessories right hand</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('accessories-right', '')">None</div>
+                        <div class="item" onclick="changeItem('accessories-right', './images/Lab_ziplock.png')"><img src="./images/Lab_ziplock.png" alt="Accessory 1"></div>
+                        <div class="item" onclick="changeItem('accessories-right', './images/Play_candy.png')"><img src="./images/Play_candy.png" alt="Accessory 2"></div>
+                        <div class="item" onclick="changeItem('accessories-right', './images/Gold_cane.png')"><img src="./images/Gold_cane.png" alt="Accessory 3"></div>
+                        <div class="item" onclick="changeItem('accessories-right', './images/Throne_power.png')"><img src="./images/Throne_power.png" alt="Accessory 4"></div>
+                    </div>
+                </div>
+                <div class="glasses">
+                    <div class="header">Glasses</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('glasses', '')">None</div>
+                        <div class="item" onclick="changeItem('glasses', './images/Gold_glasses.png')"><img src="./images/Gold_glasses.png" alt="Glasses 1"></div>
+                        <div class="item" onclick="changeItem('glasses', './images/Lab_glasses.png')"><img src="./images/Lab_glasses.png" alt="Glasses 1"></div>
+                    </div>
+                </div>
+                <div class="background">
+                    <div class="header">Background</div>
+                    <div class="items">
+                        <div class="item" onclick="changeItem('background', '')">None</div>
+                        <div class="item" onclick="changeItem('background', './images/Fashion.png')"><img src="./images/Fashion.png" alt="Background 1"></div>
+                        <div class="item" onclick="changeItem('background', './images/Gold.png')"><img src="./images/Gold.png" alt="Background 2"></div>
+                        <div class="item" onclick="changeItem('background', './images/Lab.png')"><img src="./images/Lab.png" alt="Background 3"></div>
+                        <div class="item" onclick="changeItem('background', './images/Play.png')"><img src="./images/Play.png" alt="Background 4"></div>
+                        <div class="item" onclick="changeItem('background', './images/Throne.png')"><img src="./images/Throne.png" alt="Background 5"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="images">
+        <ul class="images-menu">
+            <li class="image reveal first"><img src="./images/Fashion-set.png" alt=""></li>
+            <li class="image reveal"><img src="./images/BreakingBad.png" alt=""></li>
+            <li class="image reveal"><img src="./images/Kid.png" alt=""></li>
+            <li class="image reveal"><img src="./images/King.png" alt=""></li>
+            <li class="image reveal"><img src="./images/Skrudj.png" alt=""></li>
+        </ul>
+    </section>
+    <section class="carousel-mobile">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item first active">
+                    <img src="./images/Fashion-set.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/BreakingBad.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Mix-clothes.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/King.png" alt="Third slide">
+                </div>
+                <div class="carousel-item last">
+                    <img src="./images/Skrudj.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-rights">
+            © 2024 by Twitch Cat. All rights reserved!
+        </div>
+    </footer>
+    <script src="./scripts/changeItems.js"></script>
+    <script src="./scripts/reveal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

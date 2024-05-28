@@ -1,0 +1,135 @@
+:root {
+    --background-color: #fbeccf;
+    --primary-font: 'Roboto', sans-serif;
+    --header-font-size: 21px;
+    --text-font-weight: 800;
+    --box-shadow: 5px 5px 5px #666666;
+    --hover-background: #cccccc;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Ваши стили для этого размера экрана */
+}
+
+/* Для устройств с шириной экрана от 768px до 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Ваши стили для этого размера экрана */
+}
+
+/* Для устройств с шириной экрана от 430px до 767px */
+@media screen and (min-width: 430px) and (max-width: 767px) {
+    /* Ваши стили для этого размера экрана */
+}
+
+/* Для устройств с шириной экрана от 375px до 429px */
+@media screen and (min-width: 375px) and (max-width: 429px) {
+    @media only screen and (max-width: 425px) {
+        .first-screen-container{
+            text-align: center;
+        }
+        .first-screen-container header h1{
+            font-size: 32px;
+        }
+        .first-screen-container header p{
+            margin: auto;
+            width: 195px;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        .first-screen-container .carousel img{
+            width: 280px;
+            height: 317px;
+        }
+        .first-screen-container .links-text p{
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .wardrobe-container {
+            width: 390px;
+            margin: auto;
+            margin-bottom: 1350px;
+        }
+        
+        .wardrobe-image {
+            position: relative;
+            width: 400px;
+            height: auto;
+        }
+        
+        .wardrobe-image img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+        }
+        
+        .wardrobe-selectors {
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 1150px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .wardrobe-selectors .header {
+            text-align: start;
+            font-size: var(--header-font-size);
+            font-weight: var(--text-font-weight);
+            margin-bottom: 5px;
+        }
+        
+        .items {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .item {
+            width: 65px;
+            height: 65px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        .images{
+            display: none;
+        }
+        section.carousel-mobile{
+            display: block;
+        }
+        .carousel-item img{
+            width: 280px;
+            height: 370px;
+        }
+        .carousel-control-prev {
+            position: relative !important;  
+            top: -180px !important;
+            left: 60px !important;
+        }
+        .carousel-control-next {
+            position: relative !important;
+            top: -210px !important;
+            left: 300px !important;
+        }
+    }
+    
+}
+
+/* Для устройств с шириной экрана до 374px и менее */
+@media screen and (max-width: 374px) {
+    /* Ваши стили для этого размера экрана */
+}
