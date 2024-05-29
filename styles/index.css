@@ -168,6 +168,11 @@ section.wardrobe {
     display: none;
 }
 
+#cancel img{
+    width: 50%;
+    height: 50%;
+}
+
 #background {
     z-index: -10;
 }
