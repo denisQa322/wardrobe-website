@@ -7,7 +7,7 @@
     --hover-background: #cccccc;
 }
 /* Для   с шириной экрана от 1024px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     .wardrobe-container{
         width: 960px;
     }
@@ -31,7 +31,7 @@
 }
 
 /* Для устройств с шириной экрана от 430px до 767px */
-@media screen and (min-width: 430px) and (max-width: 767px) {
+@media screen and (min-width: 430px) and (max-width: 767px){
     .wardrobe-container{
         width: 700px;
         flex-direction: column;
@@ -39,7 +39,7 @@
 }
 
 /* Для устройств с шириной экрана от 375px до 429px */
-@media screen and (min-width: 375px) and (max-width: 429px) {
+@media screen and (min-width: 375px) and (max-width: 429px){
     .first-screen-container{
         text-align: center;
     }
@@ -93,20 +93,29 @@
     }
     section.carousel-mobile{
         display: block;
+        height: 370px;
+        width: 280px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    section.carousel-mobile .carousel.slide{
+        width: 280px;
+        height: 370px;
+        position: absolute;
     }
     .carousel-item img{
         width: 280px;
         height: 370px;
     }
     .carousel-control-prev {
-        position: relative !important;  
-        top: -180px !important;
-        left: 60px !important;
+        position: relative;  
+        top: 50%;
+        left: 0;
     }
     .carousel-control-next {
-        position: relative !important;
-        top: -210px !important;
-        left: 300px !important;
+        position: relative;
+        top: 50%;
+        right: 0;
     }
 }
 
@@ -165,19 +174,17 @@
     }
     section.carousel-mobile{
         display: block;
+        width: 220px;
+        height: 310px;
+        margin: auto;
+    }
+    section.carousel-mobile .carousel.slide{
+        width: 220px;
+        height: 310px;
+        position: absolute;
     }
     .carousel-item img{
         width: 220px;
         height: 310px;
-    }
-    .carousel-control-prev {
-        position: relative !important;  
-        top: -180px !important;
-        left: 60px !important;
-    }
-    .carousel-control-next {
-        position: relative !important;
-        top: -205px !important;
-        left: 250px !important;
     }
 }
