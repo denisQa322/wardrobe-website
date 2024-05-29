@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,15 +56,19 @@
     </section>
     <section class="wardrobe">
         <div class="wardrobe-container">
-            <div class="wardrobe-image">
+            <div id="wardrobe-image" class="wardrobe-image">
                 <img id="avatar" src="./images/Raccon.png" alt="Avatar">
                 <img id="hat" class="overlay" src="" alt="Hat">
                 <img id="body" class="overlay" src="" alt="Body">
                 <img id="bottom" class="overlay" src="" alt="Bottom">
                 <img id="glasses" class="overlay" src="" alt="Glasses">
-                <img id="accessories" class="overlay" src="" alt="Accessories">
+                <img id="accessories-left" class="overlay" src="" alt="Accessories">
                 <img id="accessories-right" class="overlay" src="" alt="Accessories">
                 <img id="background" class="overlay" src="" alt="Background"> 
+            </div>
+            <div class="canvas-image">
+                <canvas id="canvas" width="300" height="300"></canvas>
+                <button id="download-btn">Download Image</button> 
             </div>
             <div class="wardrobe-selectors">
                 <div class="hats">
@@ -93,12 +98,12 @@
                         <div class="item" onclick="changeItem('bottom', './images/Fashion_boots.png')"><img src="./images/Fashion_boots.png" alt="Bottom 1"></div>
                     </div>
                 </div>
-                <div class="accessories">
+                <div class="accessories-left">
                     <div class="header">Accessories Left Hand</div>
                     <div class="items">
-                        <div class="item" onclick="changeItem('accessories', '')">None</div>
-                        <div class="item" onclick="changeItem('accessories', './images/Throne_orb.png')"><img src="./images/Throne_orb.png" alt="Accessory 1"></div>
-                        <div class="item" onclick="changeItem('accessories', './images/Lab_bottle.png')"><img src="./images/Lab_bottle.png" alt="Accessory 2"></div>
+                        <div class="item" onclick="changeItem('accessories-left', '')">None</div>
+                        <div class="item" onclick="changeItem('accessories-left', './images/Throne_orb.png')"><img src="./images/Throne_orb.png" alt="Accessory 1"></div>
+                        <div class="item" onclick="changeItem('accessories-left', './images/Lab_bottle.png')"><img src="./images/Lab_bottle.png" alt="Accessory 2"></div>
                     </div>
                 </div>
                 <div class="accessories-right">
@@ -133,6 +138,7 @@
             </div>
         </div> 
     </section>
+    <div class="screenshot-result"></div>
     <section class="images">
         <ul class="images-menu">
             <li class="image reveal first"><img src="./images/Fashion-set.png" alt=""></li>

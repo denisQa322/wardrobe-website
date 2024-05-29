@@ -1,52 +1,49 @@
-function changeHat() {
-    const hats = document.querySelectorAll('.hat-item');
-    hats.forEach(hat => {
-        hat.addEventListener('click', () => {
-            hats.forEach(otherHat => {
-                otherHat.classList.remove('active');
-            });
-            hat.classList.add('active');
-        });
+// Функция для смены элемента
+function changeItem(itemType, itemSrc) {
+    document.getElementById(itemType).src = itemSrc;
+    updateCanvas();
+}
+
+// Функция для обновления canvas
+function updateCanvas() {
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+
+    // Очищаем canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Получаем все слои в правильном порядке
+    var layersOrder = ['background', 'avatar', 'hat', 'body', 'bottom', 'glasses', 'accessories-left', 'accessories-right'];
+    
+    // Рисуем каждый слой на canvas
+    layersOrder.forEach(layerId => {
+        var layer = document.getElementById(layerId);
+        if (layer && layer.src) {
+            var img = new Image();
+            img.src = layer.src;
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            }
+        }
     });
 }
 
-changeHat();
+// Функция для скачивания изображения
+function downloadImage() {
+    var canvas = document.getElementById('canvas');
+    var imageUrl = canvas.toDataURL('image/png');
 
-function changeAccessories(){
-    const accessories = document.querySelectorAll('.accessories-item');
-    accessories.forEach(accessory => {
-        accessory.addEventListener('click', () => {
-            accessories.forEach(otherAccessory => {
-                otherAccessory.classList.remove('active');
-            });
-            accessory.classList.add('active');
-        });
-    });
+    // Создаем временную ссылку для скачивания изображения
+    var link = document.createElement('a');
+    link.href = imageUrl;
+    link.download = 'downloaded_image.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
-changeAccessories();
+// Привязываем функцию скачивания к кнопке
+document.getElementById('download-btn').addEventListener('click', downloadImage);
 
-function changeBottoms(){
-    const bottoms = document.querySelectorAll('.bottom-item');
-    bottoms.forEach(bottom => {
-        bottom.addEventListener('click', () => {
-            bottoms.forEach(otherBottom => {
-                otherBottom.classList.remove('active');
-            });
-            bottom.classList.add('active');
-        });
-    });
-}
-
-changeBottoms();
-
-function changeItem(type, src) {
-    const element = document.getElementById(type);
-    if (src) {
-        element.src = src;
-        element.style.display = 'block';
-    } else {
-        element.style.display = 'none';
-    }
-}
-
+// Обновляем canvas при загрузке страницы
+window.onload = updateCanvas;

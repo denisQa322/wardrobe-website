@@ -88,21 +88,39 @@ section.wardrobe {
 .wardrobe-container {
     width: 1200px;
     margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.wardrobe-image {
-    position: relative;
-    width: 400px;
-    height: auto;
+.wardrobe-image img#avatar{
+    display: none;
 }
 
-.wardrobe-image img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 150px;
-    left: 750px;
-    border-radius: 5px;
+.canvas-image{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#download-btn{
+    width: 200px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+#download-btn:active{
+    transform: scale(0.7);
+    transition: 0.4s;
+}
+
+#download-btn:hover{
+    background-color: var(--hover-background);
 }
 
 .wardrobe-selectors {
@@ -151,7 +169,7 @@ section.wardrobe {
 }
 
 #background {
-    z-index: -1;
+    z-index: -10;
 }
 
 
