@@ -11,12 +11,12 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
     text-align: center;
 }
 
 body{
     background-color: #fbeccf;
+    font-family: 'Coiny',sans-serif !important;
 }
 
 section.first-screen{
@@ -25,12 +25,10 @@ section.first-screen{
 }
 
 .first-screen-container{
+    width: 1200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-}
-
-.first-screen-container header{
-    padding-bottom: 50px;
 }
 
 .first-screen-container header h1{
@@ -43,17 +41,13 @@ section.first-screen{
     font-weight: 800;
 }
 
-.first-screen-container .carousel{
+.first-screen-container .gif img{
     width: 397px;
     height: 450px;
     margin: auto;
     margin-bottom: 30px;
 }
 
-.first-screen-container .carousel img{
-    width: 397px;
-    height: 450px;
-}
 
 .first-screen-container .socials{
     margin: auto;

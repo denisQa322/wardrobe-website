@@ -8,6 +8,9 @@
 }
 /* Для   с шириной экрана от 1024px */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .first-screen-container{
+        width: 960px;
+    }
     .wardrobe-container{
         width: 960px;
     }
@@ -15,6 +18,9 @@
 
 /* Для   с шириной экрана от 768px до 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .first-screen-container{
+        width: 700px;
+    }    
     .wardrobe-container{
         width: 700px;
     }
@@ -32,6 +38,9 @@
 
 /* Для устройств с шириной экрана от 430px до 767px */
 @media screen and (min-width: 430px) and (max-width: 767px){
+    .first-screen-container{
+        width: 700px;
+    }
     .wardrobe-container{
         width: 700px;
         flex-direction: column;
@@ -41,6 +50,7 @@
 /* Для устройств с шириной экрана от 375px до 429px */
 @media screen and (min-width: 375px) and (max-width: 429px){
     .first-screen-container{
+        width: 390px;
         text-align: center;
     }
     .first-screen-container header{
@@ -55,11 +65,7 @@
         font-size: 14px;
         word-wrap: break-word;
     }
-    .first-screen-container .carousel{
-        width: 280px;
-        height: 317px;
-    }
-    .first-screen-container .carousel img{
+    .first-screen-container .gif img{
         width: 280px;
         height: 317px;
     }
@@ -122,6 +128,7 @@
 /* Для устройств с шириной экрана до 374px и менее */
 @media screen and (max-width: 374px) {
     .first-screen-container{
+        width: 320px;
         text-align: center;
     }
     .first-screen-container header{
@@ -136,11 +143,7 @@
         font-size: 14px;
         word-wrap: break-word;
     }
-    .first-screen-container .carousel{
-        width: 220px;
-        height: 267px;
-    }
-    .first-screen-container .carousel img{
+    .first-screen-container .gif img{
         width: 220px;
         height: 267px;
     }
